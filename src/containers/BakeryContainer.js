@@ -1,6 +1,13 @@
+import { useState } from "react";
 import Cake from "../components/Cake";
 
 const  BakeryContainer = () => {
+
+    const [totalValueSold, setTotalValueSold] = useState(0);
+
+    const sellCake = (price) => {
+        setTotalValueSold(totalValueSold + price);
+    }
     
     const victoriaSponge = {
         cakeName: "Victoria Sponge",
@@ -19,20 +26,21 @@ const  BakeryContainer = () => {
     const carrotCake = {
         cakeName: "Carrot Cake",
         ingredients: ["carrots", "walnuts", "oil", "cream cheese", "flour", "sugar"],
-        price: 8,
+        price: 5,
         rating: 5
     }
 
     const cakes = [victoriaSponge, teaLoaf, carrotCake];
 
     const displayCakes = () => {
-        return cakes.map((cake, index) => <Cake key={index} cake={cake}/>);
+        return cakes.map((cake, index) => <Cake key={index} cake={cake} sellCake={sellCake}/>);
     }
 
     return (
         <div className="cakes">
             <h2>Cakes:</h2>
             {displayCakes()}
+            <h2>Total Value Sold: {totalValueSold}</h2>
         </div>
     );
 }
