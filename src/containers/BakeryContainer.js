@@ -15,7 +15,7 @@ const  BakeryContainer = () => {
     const [cakes, setCakes] = useState(BakeryItemsPayload);
 
     const displayCakes = () => {
-        return cakes.map((cake, index) => <Cake key={index} cake={cake} sellCake={sellCake}/>);
+        return cakes.map((cake, index) => <Cake key={cake.cakeId} cake={cake} sellCake={sellCake}/>);
     }
 
     return (
