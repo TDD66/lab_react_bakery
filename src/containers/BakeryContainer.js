@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Cake from "../components/Cake";
 
+import './BakeryContainer.css';
+
 const  BakeryContainer = () => {
 
     const [totalValueSold, setTotalValueSold] = useState(0);
@@ -37,13 +39,13 @@ const  BakeryContainer = () => {
     }
 
     return (
-        <>
+        <div className="bakery-items">
             <h2>Cakes:</h2>
             <div className="cakes">
                 {displayCakes()}
             </div>
             <h2>Total Value Sold: £{totalValueSold}</h2>
-        </>
+        </div>
     );
 }
  
