@@ -1,0 +1,93 @@
+[
+	{
+		"cakes": [	
+			{
+			"cakeId": 1,
+			"name": "Victoria Sponge",
+			"ingredients": [
+				"eggs",
+				"butter",
+				"sugar",
+				"self-raising flour",
+				"baking powder",
+				"milk"
+			],
+			"price": 5,
+			"rating": 5
+		},
+		{
+			"cakeId": 2,
+			"name": "Tea Loaf",
+			"ingredients": [
+				"eggs",
+				"oil",
+				"dried fruit",
+				"sugar",
+				"self-raising flour",
+				"strong tea"
+			],
+			"price": 2,
+			"rating": 3
+		},
+		{
+			"cakeId": 3,
+			"name": "Carrot Cake",
+			"ingredients": [
+				"carrots",
+				"walnuts",
+				"oil",
+				"cream cheese",
+				"flour",
+				"sugar"
+			],
+			"price": 8,
+			"rating": 5
+		},
+		{
+			"cakeId": 4,
+			"name": "Red Velvet Cake",
+			"ingredients": [
+				"carrots",
+					"walnuts",
+				"oil",
+					"cream cheese",
+					"flour",
+				"sugar"
+			],
+			"price": 8,
+			"rating": 5
+		}
+		],
+
+		"pies": [
+			{
+				"pieId": 1,
+				"name": "Key Lime Pie",
+				"ingredients": [
+				"eggs",
+				"butter",
+				"sugar",
+				"self-raising flour",
+				"baking powder",
+				"milk"
+				],
+				"price": 5,
+				"rating": 5
+			},
+			{
+				"pieId": 2,
+				"name": "Sweet Potato Pie",
+				"ingredients": [
+				"eggs",
+				"butter",
+				"sugar",
+				"self-raising flour",
+				"baking powder",
+				"milk"
+				],
+				"price": 5,
+				"rating": 5
+			}
+		]
+	}
+] 
