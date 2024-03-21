@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Cake from "../components/Cake";
-import BakeryItemsPayload from './BakeryItemsPayload.json';
+import CakesPayload from './CakesPayload.json';
 
 import './BakeryContainer.css';
 
@@ -12,7 +12,7 @@ const  BakeryContainer = () => {
         setTotalValueSold(totalValueSold + price);
     }
 
-    const [cakes, setCakes] = useState(BakeryItemsPayload);
+    const [cakes, setCakes] = useState(CakesPayload);
 
     const displayCakes = () => {
         return cakes.map((cake, index) => <Cake key={cake.cakeId} cake={cake} sellCake={sellCake}/>);
