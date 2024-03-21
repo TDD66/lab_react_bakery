@@ -23,8 +23,7 @@ const  BakeryContainer = () => {
 
 
     const displayItems = (type) => {
-        const itemKey = `${type}Id`;
-        return items[type].map(item => <Item key={item[itemKey]} item={item} itemType={type} sellItem={sellItem}/>);
+        return items[type].map((item) => <Item key={item.name} item={item} itemType={type} sellItem={sellItem}/>);
     }
 
     return (
