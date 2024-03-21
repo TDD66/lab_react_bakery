@@ -30,18 +30,20 @@ const  BakeryContainer = () => {
         rating: 5
     }
 
-    const cakes = [victoriaSponge, teaLoaf, carrotCake];
+    const [cakes, setCakes] = useState([victoriaSponge, teaLoaf, carrotCake]);
 
     const displayCakes = () => {
         return cakes.map((cake, index) => <Cake key={index} cake={cake} sellCake={sellCake}/>);
     }
 
     return (
-        <div className="cakes">
+        <>
             <h2>Cakes:</h2>
-            {displayCakes()}
+            <div className="cakes">
+                {displayCakes()}
+            </div>
             <h2>Total Value Sold: {totalValueSold}</h2>
-        </div>
+        </>
     );
 }
  
