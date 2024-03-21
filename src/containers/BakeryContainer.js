@@ -42,7 +42,7 @@ const  BakeryContainer = () => {
             <div className="cakes">
                 {displayCakes()}
             </div>
-            <h2>Total Value Sold: {totalValueSold}</h2>
+            <h2>Total Value Sold: £{totalValueSold}</h2>
         </>
     );
 }
