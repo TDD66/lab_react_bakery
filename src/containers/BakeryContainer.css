@@ -2,3 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+.bakery-items > h2 {
+    text-align: center;
+}

@@ -40,7 +40,7 @@ const  BakeryContainer = () => {
 
     return (
         <div className="bakery-items">
-            <h2>Cakes:</h2>
+            <h2>Cakes</h2>
             <div className="cakes">
                 {displayCakes()}
             </div>

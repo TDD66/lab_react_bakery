@@ -1,3 +1,5 @@
+import './Cake.css';
+
 const Cake = ({cake, sellCake}) => {
 
     const {cakeName, ingredients, price, rating} = cake;
